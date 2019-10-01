@@ -1812,20 +1812,20 @@ if ($_REQUEST["act"]=='ads') {
       <tr>
         <td class="formLeft"><?php echo $lang['Edit_Order_Location']; ?></td>
         <td>
-        	<label class="location_label"> City<br>
-            <input type="text" name="city" maxlength="250" value="<?php echo ReadDB($Order["city"]); ?>" placeholder="City" />
+        	<label class="location_label"> <?php echo $lang['Edit_Order_City']; ?><br>
+            <input type="text" name="city" maxlength="250" value="<?php echo ReadDB($Order["city"]); ?>" placeholder="<?php echo $lang['Edit_Order_City']; ?>" />
             </label>
-            
-            <label class="location_label"> State<br>
-            <input type="text" name="state" maxlength="250" value="<?php echo ReadDB($Order["state"]); ?>" placeholder="State" />			
+            &nbsp;
+            <label class="location_label"> <?php echo $lang['Edit_Order_State']; ?><br>
+            <input type="text" name="state" maxlength="250" value="<?php echo ReadDB($Order["state"]); ?>" placeholder="<?php echo $lang['Edit_Order_State']; ?>" />			
             </label>
-            
-            <label class="location_label"> Zip<br>
-            <input type="text" name="zip" maxlength="250" value="<?php echo ReadDB($Order["zip"]); ?>" placeholder="Zip" />
+            &nbsp;
+            <label class="location_label"> <?php echo $lang['Edit_Order_Zip']; ?><br>
+            <input type="text" name="zip" maxlength="250" value="<?php echo ReadDB($Order["zip"]); ?>" placeholder="<?php echo $lang['Edit_Order_Zip']; ?>" />
             </label>
-            
-            <label class="location_label"> Country<br>
-            <input type="text" name="country" maxlength="250" value="<?php echo ReadDB($Order["country"]); ?>" placeholder="Country" />
+            &nbsp;
+            <label class="location_label"> <?php echo $lang['Edit_Order_Country']; ?><br>
+            <input type="text" name="country" maxlength="250" value="<?php echo ReadDB($Order["country"]); ?>" placeholder="<?php echo $lang['Edit_Order_Country']; ?>" />
             </label>
         </td>
       </tr>

@@ -204,13 +204,13 @@ if (isset($_REQUEST["id"]) and $_REQUEST["id"]>0) {
                 <div>
                   <label>
                   	Pay & Reserve Pickup
-                    <input type="radio" name="add_shipping" value="radio" id="add_shipping_0" checked>
+                    <input type="radio" class="shipping-input" name="add_shipping" id="add_shipping_0" checked onclick="addShipping(this.value)" value="0">
                     (no shipping charge)</label>
                   <br>
                   <?php if($shipPrice>0) {?>
                   <label>
                   	Pay & Ship
-                    <input type="radio" name="add_shipping" value="radio" id="add_shipping_1">
+                    <input type="radio" class="shipping-input" name="add_shipping" id="add_shipping_1" onclick="addShipping(this.value)" value="<?php echo ReadDB($Ads["shipping"]); ?>">
                     (shipping cost will be added)</label>
                   <br>
                   <?php } ?>
@@ -225,6 +225,35 @@ if (isset($_REQUEST["id"]) and $_REQUEST["id"]>0) {
 					}
 				?>
                 
+                <script>
+				
+				
+                function addShipping(shipping) {
+					
+					const formatter = new Intl.NumberFormat('en-US', {
+					  style: 'currency',
+					  currency: "<?php echo $CurrAbr[$Options["currency"]]?>",
+					  minimumFractionDigits: 2
+					});
+					
+					var shipping_id = document.getElementById("shipping_id");
+					
+					var shipping_inputs = document.getElementsByClassName("shipping-input");
+					
+					var total_price = document.getElementById("total_price");
+					
+					for(var i = 0; i < shipping_inputs.length; i++) {
+						shipping_id.value = shipping;
+						var total_formated = formatter.format(parseInt(<?php echo $ppPrice; ?>)+parseInt(shipping));
+						total_price.innerHTML = total_formated;
+					}
+				} 
+                </script>
+                
+                <div>Total Price: <span id="total_price"><?php echo CurrFormat($Options["currency"], $CurrSign[$Options["currency"]], ReadDB($Ads["sale_price"])); ?></span></div>
+                
+                
+                
                 <div style="clear:both; padding: 16px 0;">
                 	<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" name="paypalform" id="paypalform">
                         <input type="hidden" name="cmd" value="_xclick" />
@@ -234,7 +263,7 @@ if (isset($_REQUEST["id"]) and $_REQUEST["id"]>0) {
                         <input type="hidden" name="item_number" value="<?php echo ReadDB($Ads["id"]); ?>" />
                         <input type="hidden" name="amount" value="<?php echo $ppPrice; ?>" />
                         <input type="hidden" name="custom" value="<?php echo ReadDB($Ads["id"]); ?>">
-                        <input type="hidden" name="shipping" value="<?php echo ReadDB($Ads["shipping"]); ?>" />
+                        <input type="hidden" id="shipping_id" name="shipping" value="0" />
                         <input type="hidden" name="currency_code" value="<?php echo $CurrAbr[$Options["currency"]]; ?>" />
                         <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted" />
                         <input type="hidden" name="return" value="<?php echo $CONFIG["full_url"]; ?>preview.php" />

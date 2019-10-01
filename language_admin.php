@@ -209,8 +209,10 @@ $lang['Edit_Order_Product']		="Product:";
 $lang['Edit_Order_Amount']		="Total:";
 $lang['Edit_Order_address']		="Address:";
 $lang['Edit_Order_Location']	="Location:";
-$lang['Edit_Order_Amount']		="Total:";
-$lang['Edit_Order_Amount']		="Total:";
+$lang['Edit_Order_City']		="City:";
+$lang['Edit_Order_State']		="State:";
+$lang['Edit_Order_Zip']			="Zip:";
+$lang['Edit_Order_Country']		="Country:";
 $lang['Edit_Order_button']		="Update";
 
 
