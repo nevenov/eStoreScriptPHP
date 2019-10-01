@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="code_generator.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="contactform.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="contents.html" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="contentsutf8.html" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="DKIM.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="exceptions.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="gmail_xoauth.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="gmail.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="mail.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="mailing_list.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="index.html" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="pop_before_smtp.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833000000000" Dst="2" />
+<file name="send_multiple_file_upload.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="sendmail.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="send_file_upload.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="smtp_check.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="signed-mail.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="smtp.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="smtp_no_auth.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+<file name="ssl_options.phps" server="simpleforumphp.com/public_html/test/" local="131565602360000000" remote="132133833600000000" Dst="2" />
+</dwsync>

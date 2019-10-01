@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Installation instructions</title>
+<style type="text/css">
+body {
+	margin:0px;	
+	font-family: Georgia, Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+</style>
+</head>
+
+<body>
+<div style="width:1000px;margin:0 auto;">
+<div style="text-align:center;font-family:Georgia,Times,serif;font-size:36px;font-weight:bold;color:#ffffff;padding:12px;background-color:#44adc8;"> Classified Ads Script PHP by ProfiAnts</div>
+
+<div style="background-color:#f6f6f6; height:12px;"></div>
+
+<div style="padding:30px; line-height:20px;">
+	<div style="padding-bottom:20px; font-weight:bold; ">Thank you for buying our script.</div>
+    
+    <div style="padding-bottom:14px; font-weight: bold;">Installing the script: </div>
+    
+    <div style="padding-bottom:14px;">1) Unzip and upload all files in a folder on your website. For example the name of the folder could be "SCRIPTFOLDER", so the URL to the script folder will be http://www.YOURDOMAIN.com/SCRIPTFOLDER/, where www.YOURDOMAIN.com is the domain name of your website;</div>
+    
+    <div style="padding-bottom:14px;">2) Open http://www.YOURDOMAIN.com/SCRIPTFOLDER/installation.php. 
+    Installation wizard will ask you to complete the form with:<br />
+    &nbsp; a. Database connection details(MySQL server name, Database username and password, Database name);<br />  
+    &nbsp; b. Server path, Full URL and Script directory name - these details are written into the form automatically, so you should only check if they are not correct<br />  
+    &nbsp; c. Admin Username and Password<br />  
+    Then hit "Install Script" button. The wizard will create the database tables into the provided database and will save all the details from the form into allinfo.php file in the script folder.</div>
+    
+    <div style="padding-bottom:14px;">3) Delete &quot;installation.php&quot; file</div>
+    
+    <div style="padding-bottom:24px;">4) Login at http://www.YOURDOMAIN.com/script/admin.php</div>
+    
+    
+    <div style="padding-bottom:14px; font-weight: bold;">How to put the script on your webpage: </div>
+    <div style="padding-bottom:24px;">
+    &nbsp; a. Go to '<strong>Put on WebPage</strong>' page and choose one of two ways(codes) to put the script on your website;<br />
+    &nbsp; b. Copy the code, go to your page and paste between &lt;body&gt; code &lt;/body&gt; tags. If you choose second install option(php include) you should put this line of code &lt;?php session_start(); ?&gt; at the very top of the php page (first line of code); </div>
+    
+    
+    <div style="padding-bottom:14px; font-weight: bold;">Changing admin username and/or password. Changing database connection: </div>
+    
+    <div style="padding-bottom:24px;">All the admin login details(username and password) and database connection details are stored in $CONFIG array into allinfo.php file on your website. <br />
+    If, you want to change the admin username or password on a later stage you should: <br />
+    &nbsp; a. Download allinfo.php from the installed script folder on your website and open it;<br />
+    &nbsp; b. Find the two variables $CONFIG["admin_user"]='username'; and $CONFIG["admin_pass"]='password'; and change username and/or password ans save;<br />
+    &nbsp; c. Upload the modified allinfo.php to the script folder on your website;<br />
+    </div>
+    
+    <div style="padding-bottom:2px;">If you have any problems with installation, please contact us at info@simplephpscripts.com</div>
+</div>
+
+<div style="background-color:#f6f6f6; height:12px;"></div>
+<div style="background-color:#76c1d5; height:4px;"></div>
+
+</div>
+</body>
+</html>

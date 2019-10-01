@@ -1,0 +1,4 @@
+[21-Sep-2019 07:49:54 Europe/Sofia] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/simplefo/public_html/test/eStoreScriptPHP_v1.0/configs.php on line 26
+[21-Sep-2019 07:49:56 Europe/Sofia] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/simplefo/public_html/test/eStoreScriptPHP_v1.0/configs.php on line 26
+[21-Sep-2019 07:49:58 Europe/Sofia] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/simplefo/public_html/test/eStoreScriptPHP_v1.0/configs.php on line 26
+[01-Oct-2019 11:18:09 Europe/Sofia] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/simplefo/public_html/test/eStoreScriptPHP_v1.0/classifiedads.php on line 237
